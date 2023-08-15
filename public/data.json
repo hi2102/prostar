@@ -1,0 +1,5 @@
+[
+	{ "id": 0, "content": "이용약관", "checked": false },
+	{ "id": 1, "content": "개인 정보 수집 및 이용", "checked": false },
+	{ "id": 2, "content": "개인 정보의 3자 제공 및 이전", "checked": false }
+]
