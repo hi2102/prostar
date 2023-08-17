@@ -1,7 +1,8 @@
-/* eslint-disable @next/next/no-sync-scripts */
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
+import HeaderLayout from './components/headerLayout';
+import FooterLayout from './components/footerLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,8 +17,14 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<html lang='en'>
-			<body className={inter.className}>{children}</body>
+		<html lang='ko'>
+			<body className={inter.className}>
+				<div>
+					<HeaderLayout />
+					{children}
+					<FooterLayout />
+				</div>
+			</body>
 		</html>
 	);
 }
