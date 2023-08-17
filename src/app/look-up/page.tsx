@@ -2,7 +2,7 @@
 
 import { useState, ChangeEvent, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
-import Spinner from '../../../public/asset/spinner.svg';
+import Spinner from '../../../public/assets/spinner.svg';
 
 interface FormState {
 	state: boolean;
