@@ -6,15 +6,14 @@ const nextConfig = {
 	// 	},
 	// 	serverActions: true,
 	// },
-	// images: {
-	// 	remotePatterns: [
-	// 		{
-	// 			protocol: 'https',
-	// 			hostname: 'pixabay.com',
-	// 			port: '',
-	// 		},
-	// 	],
-	// },
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: 'static.nike.com',
+			},
+		],
+	},
 	pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
 };
 

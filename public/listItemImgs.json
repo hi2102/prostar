@@ -1,0 +1,20 @@
+[
+	{
+		"id": "0",
+		"src": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_735,c_limit/19400521-a2ec-4088-8991-e7b75d85262a/nike-just-do-it.jpg",
+		"title": "프로페셔널 트레이닝",
+		"description": "전문적인 코칭으로 라이프 스타일을 완성해 보세요."
+	},
+	{
+		"id": "1",
+		"src": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_735,c_limit/fe2e05ba-594d-4d0e-b16c-91c518d38004/nike-just-do-it.jpg",
+		"title": "개인 운동",
+		"description": "체형에 어울리는 운동법을 배우고, 새로운 아침을 시작해 보세요."
+	},
+	{
+		"id": "2",
+		"src": "https://static.nike.com/a/images/f_auto/dpr_2.0,cs_srgb/h_735,c_limit/8451950b-255e-45da-842e-ca0145baab08/nike-just-do-it.jpg",
+		"title": "그룹 운동",
+		"description": "모두와 함께 서로를 응원해보세요."
+	}
+]
