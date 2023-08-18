@@ -2,7 +2,7 @@
 
 ### main page
 
-
+<img src='https://github.com/hi2102/prostar/assets/71423455/db4d6f29-df06-4c63-8599-da3ae185ee5a' width='100%' />
 
 ### membership page
 
