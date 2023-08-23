@@ -1,16 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	// experimental: {
-	// 	images: {
-	// 		allowFutureImage: true,
-	// 	},
-	// 	serverActions: true,
-	// },
 	images: {
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: 'static.nike.com',
+				hostname: '**.nike.com',
+			},
+			{
+				protocol: 'https',
+				hostname: 'cdn.pixabay.com',
 			},
 		],
 	},
