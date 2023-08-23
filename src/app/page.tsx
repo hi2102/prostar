@@ -10,9 +10,9 @@ export default function Page() {
 					priority
 					src='/assets/mainEvent.png'
 					width={1200}
-					height={100}
+					height={300}
 					alt='main page adcertisement'
-					className='w-full h-auto mb-12'
+					className='w-full h-full mb-12'
 				/>
 				<figcaption className='text-center text-neutral-900'>
 					<h3 className='text-5xl text-black font-extrabold tracking-wider my-6'>
