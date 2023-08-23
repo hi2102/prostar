@@ -1,13 +1,7 @@
-'use client';
-
-import { useRouter } from 'next/navigation';
-
 export default function FooterLayout() {
-	const router = useRouter();
-	console.log(router);
 	return (
-		<footer className='mt-auto w-full h-auto bg-black text-white p-10 text-sm tracking-wide antialiased '>
-			<div className='grid grid-cols-5 w-full mb-8'>
+		<footer className='bg-black text-white p-10 text-sm tracking-wide'>
+			<div className='grid grid-cols-5 mb-8'>
 				<div>
 					<div className='mb-4 hover:text-white hover:cursor-pointer'>
 						새로운 소식
@@ -104,7 +98,7 @@ export default function FooterLayout() {
 							aria-label='이용약관'
 							data-type='click_navFooter'
 							data-path='terms of use'
-							href='https://agreementservice.svs.nike.com/rest/agreement?agreementType=termsOfUse&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=KR&amp;language=ko&amp;requestType=redirect'
+							href='#'
 							data-pre='ILink'>
 							이용약관
 						</a>
@@ -116,7 +110,7 @@ export default function FooterLayout() {
 							aria-label='개인정보처리방침'
 							data-type='click_navFooter'
 							data-path='privacy policy'
-							href='https://agreementservice.svs.nike.com/rest/agreement?agreementType=privacy-policy&amp;uxId=default&amp;country=KR&amp;language=ko&amp;requestType=redirect'
+							href='#'
 							data-pre='ILink'>
 							<div>개인정보처리방침</div>
 						</a>
@@ -128,7 +122,7 @@ export default function FooterLayout() {
 							aria-label='위치 기반 서비스 약관'
 							data-type='click_navFooter'
 							data-path='location service'
-							href='https://agreementservice.svs.nike.com/rest/agreement?agreementType=lbsProvider&amp;uxId=com.nike.commerce.nikedotcom.web&amp;country=KR&amp;language=ko&amp;requestType=redirect'
+							href='#'
 							data-pre='ILink'>
 							위치 기반 서비스 약관
 						</a>
@@ -137,26 +131,20 @@ export default function FooterLayout() {
 				<div className='flex justify-between mb-4 pt-4'>
 					<div className='flex gap-4'>
 						<div className='text-white flex items-center gap-2'>
-							<a
-								aria-label='선택된 위치: 대한민국'
-								title='선택된 위치: 대한민국'
-								data-pre='ILink'
-								href='//www.nike.com/language_tunnel'>
-								<svg
-									aria-hidden='true'
-									focusable='false'
-									viewBox='0 0 24 24'
-									role='img'
-									width='18px'
-									height='15px'
-									fill='none'>
-									<path
-										fill='currentColor'
-										fill-rule='evenodd'
-										d='M4.5 9.001a7.5 7.5 0 1115 0c0 1.205-.385 2.576-.934 3.928-.555 1.364-1.302 2.767-2.08 4.055a39.918 39.918 0 01-2.307 3.405c-.688.905-1.316 1.632-1.711 1.947a.75.75 0 01-.936 0c-.395-.315-1.023-1.042-1.711-1.947a39.916 39.916 0 01-2.306-3.405c-.78-1.288-1.526-2.691-2.08-4.056-.55-1.351-.935-2.722-.935-3.927zM12 12.25a3.25 3.25 0 100-6.5 3.25 3.25 0 000 6.5z'
-										clip-rule='evenodd'></path>
-								</svg>
-							</a>
+							<svg
+								aria-hidden='true'
+								focusable='false'
+								viewBox='0 0 24 24'
+								role='img'
+								width='18px'
+								height='15px'
+								fill='none'>
+								<path
+									fill='currentColor'
+									fillRule='evenodd'
+									d='M4.5 9.001a7.5 7.5 0 1115 0c0 1.205-.385 2.576-.934 3.928-.555 1.364-1.302 2.767-2.08 4.055a39.918 39.918 0 01-2.307 3.405c-.688.905-1.316 1.632-1.711 1.947a.75.75 0 01-.936 0c-.395-.315-1.023-1.042-1.711-1.947a39.916 39.916 0 01-2.306-3.405c-.78-1.288-1.526-2.691-2.08-4.056-.55-1.351-.935-2.722-.935-3.927zM12 12.25a3.25 3.25 0 100-6.5 3.25 3.25 0 000 6.5z'
+									clipRule='evenodd'></path>
+							</svg>
 							<span>대한민국</span>
 						</div>
 						<div>© 2023 Prostar Gym, Inc. All Rights Reserved</div>
@@ -169,7 +157,7 @@ export default function FooterLayout() {
 								aria-label='영상정보처리기기 운영 방침'
 								data-type='click_navFooter'
 								data-path='영상정보처리기기 운영 방침'
-								href='https://agreementservice.svs.nike.com/rest/agreement?agreementType=CCTVpolicy&amp;uxId=com.nike.cctvpolicy&amp;country=KR&amp;language=ko&amp;requestType=redirect'>
+								href='#'>
 								영상정보처리기기 운영 방침
 							</a>
 						</li>
@@ -177,51 +165,39 @@ export default function FooterLayout() {
 				</div>
 			</section>
 			<hr className='border-zinc-400' />
-			{/* <section className='border border-white'>
-				<div>
-					<span id='sub_footer_business_information_text'>
-						(유)나이키코리아 대표 Kimberlee Lynn Chang Mendes, 킴벌리 린 창
-						멘데스 | 서울 강남구 테헤란로 152 강남파이낸스센터 30층 |
+			<section>
+				<div className='mt-4'>
+					<span>
+						프로스타짐고창 대표 이동훈 | 전북 고창군 고창읍 보릿골로 85 2층 |
 						통신판매업신고번호 2011-서울강남-03461 | 등록번호{' '}
-						<span data-var='koreanBusinessInfoPhone'>220-88-09068</span>
+						<span data-var='koreanBusinessInfoPhone'>0507-1328-9673</span>
 					</span>
-					<a
+					{/* <a
 						data-var='koreanBusinessInfoLink'
 						target='_blank'
 						data-type='click_navFooter'
 						data-path='business information confirmation'
-						href='https://www.ftc.go.kr/bizCommPop.do?wrkr_no=2208809068'
+						href='https://www.ftc.go.kr/bizCommPop.do?wrkr_no=5331901874'
 						data-pre='ILink'>
 						<span id='sub_footer_business_information_link_text'>
 							사업자 정보 확인
 						</span>
-					</a>
-					<div>
-						<span id='sub_footer_customer_service_text'>
-							고객센터 전화 문의{' '}
-							<a
-								data-var='koreanCustomerServicePhone'
-								data-type='click_navFooter'
-								data-path='customer service phone'
-								href='tel:080-022-0182'
-								data-pre='ILink'>
-								080-022-0182
-							</a>{' '}
-							FAX <span data-var='koreanCustomerServiceFax'>02-6744-5880</span>{' '}
-							| 이메일{' '}
-							<a
-								data-var='koreanCustomerServiceEmail'
-								data-type='click_navFooter'
-								data-path='customer service email'
-								href='mailto:service@nike.co.kr'
-								data-pre='ILink'>
-								service@nike.co.kr
-							</a>{' '}
-							| 호스팅서비스사업자 (유)나이키코리아
-						</span>
-					</div>
+					</a> */}
+					<span id='sub_footer_customer_service_text'>
+						{' '}
+						| 고객센터 전화 문의{' '}
+						<a
+							data-var='koreanCustomerServicePhone'
+							data-type='click_navFooter'
+							data-path='customer service phone'
+							href='tel:0507-1328-9673'
+							data-pre='ILink'>
+							0507-1328-9673
+						</a>{' '}
+						| 호스팅서비스사업자 FOREVER-YOUNG Dev.
+					</span>
 				</div>
-			</section> */}
+			</section>
 		</footer>
 	);
 }
